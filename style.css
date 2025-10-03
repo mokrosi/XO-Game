@@ -4,6 +4,10 @@ body {
   background: #000;
   color: #fff;
 }
+#dashbord{
+    display: flex;
+    gap: 50px;
+}
 #board {
   display: grid;
   grid-template: repeat(3, 100px) / repeat(3, 100px);
@@ -11,6 +15,11 @@ body {
   gap: 5px;
   width: max-content;
   background-color: antiquewhite;
+}
+#consol{
+    background-color: #b00;
+    width: 50vw;
+    height: 70vh;
 }
 .cell {
   background: #505e61;
