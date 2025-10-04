@@ -138,3 +138,91 @@ img{
     border-radius: 100%;
     margin: 10px;
 }
+
+/* Responsive styles for medium, large, and iPad screens */
+@media (max-width: 1100px) {
+  #dashbord {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  #consol {
+    margin-right: 0;
+    width: 90vw;
+    max-width: 400px;
+    min-width: 240px;
+  }
+  #board {
+    margin: 1.5em auto;
+  }
+}
+
+@media (max-width: 800px) {
+  #board {
+    grid-template: repeat(3, 70px) / repeat(3, 70px);
+    padding: 10px;
+  }
+  #consol {
+    width: 95vw;
+    max-width: 350px;
+    min-width: 180px;
+    min-height: 220px;
+    font-size: 0.95em;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 600px), (max-width: 900px) and (orientation: portrait) {
+  #dashbord {
+    flex-direction: column;
+    gap: 18px;
+  }
+  #board {
+    grid-template: repeat(3, 48px) / repeat(3, 48px);
+    padding: 6px;
+    gap: 5px;
+  }
+  .cell {
+    font-size: 1.3em;
+    border-radius: 8px;
+  }
+  #consol {
+    width: 98vw;
+    max-width: 98vw;
+    min-width: 120px;
+    min-height: 120px;
+    font-size: 0.9em;
+    margin: 8px 0;
+    padding: 0.4em 0.5em;
+  }
+  h1 {
+    font-size: 1.1em;
+    margin-top: 0.7em;
+  }
+  #header {
+    flex-direction: column;
+    gap: 6px;
+  }
+  img {
+    width: 60px;
+    margin: 4px;
+  }
+}
+
+/* iPad landscape and portrait */
+@media (min-width: 700px) and (max-width: 1024px) {
+  #board {
+    grid-template: repeat(3, 80px) / repeat(3, 80px);
+    padding: 12px;
+  }
+  #consol {
+    width: 70vw;
+    max-width: 400px;
+    min-width: 180px;
+    min-height: 180px;
+    font-size: 1em;
+  }
+}
